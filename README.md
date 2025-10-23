@@ -98,6 +98,8 @@ jupyter lab
 
 ## Repositories of Interest
 
-Original repository: [Prateek Gupta](https://github.com/pg2455/KAN-Tutorial)
+Original repository by Prateek Gupta. https://github.com/pg2455/KAN-Tutorial
 
-[Efficient KAN](https://github.com/Blealtan/efficient-kan)
+**FastKAN**: Very Fast Kolmogorov-Arnold Network via Radial Basis Functions. https://github.com/ZiyaoLi/fast-kan
+
+**Efficient KAN**: An Efficient Implementation of Kolmogorov-Arnold Network. https://github.com/Blealtan/efficient-kan
