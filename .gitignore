@@ -19,8 +19,9 @@ build/
 dist/
 *.egg-info/
 
-# Data folders
+# Folders
 data/
+output/
 
 # LaTeX files
 *.aux
