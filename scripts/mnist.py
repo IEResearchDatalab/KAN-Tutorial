@@ -88,7 +88,6 @@ def plot_metrics(
     val_losses: list,
     train_accs: list,
     val_accs: list,
-    epoch_idx: int,
 ):
     plt.figure(figsize=(10, 4))
     plt.subplot(1, 2, 1)
@@ -106,7 +105,7 @@ def plot_metrics(
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(out_dir / f"metrics_epoch_{epoch_idx + 1:03d}.png", dpi=150)
+    plt.savefig(out_dir / "metrics.png", dpi=150)
     plt.close()
 
 
@@ -220,7 +219,7 @@ def main(num_epochs: int = 10):
             writer.add_scalar("val/accuracy", val_acc, epoch)
 
         # save plots
-        plot_metrics(out_dir, train_losses, val_losses, train_accs, val_accs, epoch)
+        plot_metrics(out_dir, train_losses, val_losses, train_accs, val_accs)
         plot_sample_predictions(out_dir, model, valloader, device, epoch)
         plot_confusion_matrix(out_dir, epoch, preds, labels)
 
